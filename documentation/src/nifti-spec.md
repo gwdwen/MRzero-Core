@@ -53,7 +53,7 @@ The `gyro` value implicitly defines the nucleus: 42.5764 MHz/T corresponds to ^1
 
 ### Tissue Properties
 
-The following properties are defined by the NIfTI phantom specification. If stored as per-voxel NIfTI data, the file postfix of should match the key (e.g.: `subj42_dB0.niij.gz`).
+The following properties are defined by the NIfTI phantom specification. If stored as per-voxel NIfTI data, the file postfix should match the key (e.g.: `subj42_dB0.nii.gz`).
 
 | Key     | Property                       | Default |
 | ------- | ------------------------------ | ------- |
@@ -63,8 +63,8 @@ The following properties are defined by the NIfTI phantom specification. If stor
 | T2'     | T2' dephasing                  | inf     |
 | ADC     | Apparent Diffusion Coefficient | 0       |
 | dB0     | B0 frequency offset            | 0       |
-| B1+     | B1 transmit field              | 1       |
-| B1-     | B1 receive / coil sensitivity  | 1       |
+| B1+     | B1 transmit field              | [1]     |
+| B1-     | B1 receive / coil sensitivity  | [1]     |
 
 
 ## 3. NIfTI Data
