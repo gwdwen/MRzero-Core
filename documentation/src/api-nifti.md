@@ -54,7 +54,7 @@ PhantomSystem(gyro, B0)
 
 Reference to a NIfTI file, including the index to the tissue.
 NIfTIs can contain multiple 3D volumes, stacked in the 4th dimension.
-For a description look at the [specification](nifti-spec.md#tissue-properties).
+For a description look at the [specification](nifti-spec.md#tissue-property-values).
 
 ```python
 NiftiRef(file_name, tissue_index)
@@ -72,7 +72,7 @@ As given by the spec, `NiftiRef`s are stored as `"path/to/nifti.nii.gz[<index>]"
 ## `NiftiMapping`
 
 Combination of `NiftiRef` and a mapping function for simple modifications.
-For a description look at the [specification](nifti-spec.md#tissue-properties).
+For a description look at the [specification](nifti-spec.md#tissue-property-values).
 
 ```python
 NiftiMapping(file, func)
@@ -102,7 +102,7 @@ NiftiTissue(density, T1, T2, T2dash, ADC, dB0, B1_tx, B1_rx)
 | `T2` | Exponential T2 relaxation | `inf` |
 | `T2dash` | Exponential T2 dephasing | `inf` |
 | `ADC` | Apparent Diffusion Coefficient | `0.0` |
-| `dB0` | Offresonance through `B0` fluctuations | `1.0` |
+| `dB0` | Offresonance through `B0` fluctuations | `0.0` |
 | `B1_tx` | Fluctuations in B1+ (transmit) field | `1.0` |
 | `B1_rx` | Fluctuations in B1- (recieve) field | `1.0` |
 
